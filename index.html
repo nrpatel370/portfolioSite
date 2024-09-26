@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  
+</head>
+
+<body>
+  <nav id = "desktop-nav">
+    <div class="logo">Nirav Patel</div>
+    <div>
+      <ul class="nav-links"> 
+        <li><a href="#about">About</a><li>  
+        <li><a href="#experience">Experience</a><li>
+        <li><a href="#projects">Projects</a><li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Nirav Patel</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class = "menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a><li>  
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a><li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a><li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  
+  <section id = "profile">
+    <div class = "pic-container">
+      <img id = "profile_pic" src = "./assests/profile-pic.jpeg" alt = "Nirav Patel profile pic">
+    </div>
+    <div class ="section__text">
+      <p class ="section__text__p1">Hello, I'm</p>
+      <h1 class = "title">Nirav Patel</h1>
+      <p class = "section_text_p2">Computer Science Student @ WSU!</p>
+      <div class = "btn-container">
+        <button class = "btn btn-color-2" onclick = "window.open('./assests/resume-example.pdf')">
+          Download Resume
+        </button>
+
+        <button class = "btn btn-color-1" onclick = "location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assests/linkedin.png" alt = "linkedin profile" class = "icon" onclick = "location.href = 'https://www.linkedin.com/in/nirav-patel-8961742a6/'">
+        <img src="./assests/github.png" alt = "github profile" class = "icon" onclick = "location.href = 'https://github.com/nrpatel370'">
+
+
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class ="section__text__p1">Get To Know More</p>
+    <h1 class ="title">About me</h1>
+    <div class ="section-container">
+      <div class= "section__pic-container">
+      <img src="./assests/about-pic.png" alt = "profile-pic" class = "about-pic">
+      </div>
+      
+      <div class ="about-details-container">
+        <div class ="about-containers">
+          <div class ="details-container">
+          <img src="./assests/experience.png" alt = "exp icon" class ="icon">
+          <h3>Current Year</h3>
+          <p>Junior</p>
+          </div>
+          <div class ="details-container">
+            <img src="./assests/education.png" alt = "edu icon" class ="icon">
+            <h3>Education</h3>
+            <p>B.S in<br />Computer Science & Honors Co-Major</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p style="text-align: center; line-height: 25px;">
+            Welcome to my portfolio page! I am currently a Junior at Wayne State University. 
+            You can interact and test out some of my best projects showcased here! 
+            I'm practicing fullstack framworks and languages and passionate about Machine learning and AGI!
+            My Hobbies include working out, playing games, meeting new people, and sleeping!
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assests/arrow.png" alt ="arrow img" onclick="location.href='./#experience'" class="icon arrow">
+  </section>
+
+  <section id="experience">
+    <p class="section__text__p1"></p>
+    <h1 class ="title">Skillset</h1>
+    <div class ="experience-details-container">
+      <div class ="about-containers">
+
+        <div class ="details-container">
+          <h2 class = "experience-sub-title">Programming Languages</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assests/checkmark.png" class = "icon">
+              <div>
+                <h3>HTML/CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assests/checkmark.png" class = "icon">
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assests/checkmark.png" class = "icon">
+              <div>
+                <h3>Java</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assests/checkmark.png" class = "icon">
+              <div>
+                <h3>Python</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assests/checkmark.png" class = "icon">
+              <div>
+                <h3>C++</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assests/checkmark.png" class = "icon">
+              <div>
+                <h3>C</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        
+
+        <div class ="details-container">
+          <h2 class = "experience-sub-title">Frameworks</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assests/checkmark.png" class = "icon">
+              <div>
+                <h3>Tailwind CSS</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assests/checkmark.png" class = "icon">
+              <div>
+                <h3>NodeJS + Express</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assests/checkmark.png" class = "icon">
+              <div>
+                <h3>mySQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assests/checkmark.png" class = "icon">
+              <div>
+                <h3>MongoDB</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assests/checkmark.png" class = "icon">
+              <div>
+                <h3>ReactJS</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assests/checkmark.png" class = "icon">
+              <div>
+                <h3>Django</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+
+    
+          </div>
+        </div>
+
+        
+        
+      </div>
+    </div>
+    <img src="./assests/arrow.png" alt ="arrow img" onclick="location.href='./#projects'" class="icon arrow">
+  </section>
+
+  
+  <section id="projects">
+    <p class = "section__text__p1">Browse My Recent Projects</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assests/project-1.png" alt="project1" class="project-img">
+          <img src="./assests/project1-2.png" alt="project1" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">
+          Iphone Clone
+        </h2>
+        <div class="button-container">
+          <a href="https://iphoneclone-nrpateldev.netlify.app/" target="_blank">
+            <button class="btn btn-color-2 project-btn">
+              Website
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img  id="project2Img"src="./assests/project-2.png" alt="project2" class="project-img">
+        </div>
+        <h2 id="project2" class="experience-sub-title project-title">
+          My Blog (MERN Stack)
+        </h2>
+        <a href="https://github.com/nrpatel370/mernBlog" target="_blank">
+          <button class="btn btn-color-2 project-btn">
+            GitHub
+          </button>
+        </a>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img id="Django" src="./assests/project-3.png" alt="project3" class="project-img">
+        </div>
+
+        <h2 class="experience-sub-title project-title">
+          Django Ecommerce
+        </h2>
+
+        <a href="https://github.com/nrpatel370/djangoEcommerce" target="_blank">
+          <button class="btn btn-color-2 project-btn">
+            GitHub
+          </button>
+        </a>
+
+          <!-- <button class="btn btn-color-2 project-btn" onclick="location.href=''">
+            Live Demo
+          </button> -->
+
+        </div>
+      </div>
+    </div>
+    </div>
+    <img src="./assests/arrow.png" alt ="arrow img" onclick="location.href='./#projects'" class="icon arrow">
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">
+      Get in Touch
+    </p>
+
+    <h1 class="title">Contact Me!</h1>
+
+    <div class="contact-info-upper-container">
+
+      <div class="contact-info-container">
+        <img src="./assests/email.png" alt="email logo" class="icon contact-icon email-icon">
+        <p><a href="mailto:nrpatel370@gmail.com">nrpatel370@gmail.com</a></p>
+      </div>
+
+      <div class="contact-info-container">
+        <img src="./assests/linkedin.png" alt="linkedin logo" class="icon contact-icon">
+        <p><a href='https://www.linkedin.com/in/nirav-patel-8961742a6/'>LinkedIn</a></p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links"> 
+          <li><a href="#about">About</a><li>  
+          <li><a href="#experience">Experience</a><li>
+          <li><a href="#projects">Projects</a><li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>
+      Copyright &#169; 2024 Nirav Patel. All Rights Reserved.
+    </p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
